@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main{
+    width: 800px;
+    height: 500px;
+    position: relative;
+}
+.main1{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px;
+}
+button{
+    font-size: 25px;
+    padding: 30px;
+    background-color: lightgreen;
+    color: rgb(red, green, blue);
+    cursor: pointer;
+}
+.main2 img{
+    position: absolute;
+    top: 40%;
+    left:33%;
+    transition: transform 1s linear;
+    mix-blend-mode: multiply;
+}
+@keyframes rotator {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.slow:hover ~ .main2 img {
+    animation: rotator 3s infinite linear;
+}
+.medium:hover~ .main2 img {
+    animation: rotator 2s infinite linear;
+}
+.speed:hover ~ .main2 img {
+    animation: rotator 1s infinite linear;
+}
+.full-speed:hover ~ .main2 img {
+    animation: rotator 0.4s infinite linear;
+}

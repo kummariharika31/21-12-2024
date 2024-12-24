@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.container{
+    border:2px solod rgb(0,0,0);
+    margin:50px;
+    height: 400px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: rgb(red, green, blue);
+    background-image: linear-gradient(45deg, rgb(195,123,123) 0%rgb(55,166,210) 100%);
+
+}
+.item{
+    border: 2px solid rgb (30,30,195);
+    height: 40px;
+    width: 40px;
+    background: radial-gradient(circle,rgb(226,33,33)0%, rgb(239,239,6)100%)
+
+}
+@keyframes music {
+    from{
+    }
+    to{
+        height: 150px;
+    }
+}
+.item1,
+.item3,
+.item5,
+.item9,
+.item11{
+    animation: music 0.4s linear infinite;
+    animation-direction: alternate-reverse;
+}
+.item2,
+.item4,
+.item6,
+.item8,
+.item10,
+.item12{
+    animation: music 0.3s linear infinite;
+    animation-direction: alternate;
+}
